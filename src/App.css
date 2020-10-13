@@ -30,9 +30,20 @@
 }
 
 @media (max-width: 1920px) {
-  .chartjs-render-monitor{
-      max-width: 800px;
-      max-height: 600px;
+  #line-chart{
+    max-width: 800px;
+    max-height: 600px;
+    margin: 0 auto;
+  }
+  #bar-chart{
+    max-width: 800px;
+    max-height: 600px;
+    margin: 0 auto;
+  }  
+  #doughnut-chart{
+      max-width: 600px;
+      max-height: 800px;
       margin: 0 auto;
+      padding-bottom: 10px;
   }
 }

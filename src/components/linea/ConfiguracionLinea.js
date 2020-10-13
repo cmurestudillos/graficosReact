@@ -1,4 +1,4 @@
-var data = {
+var datosLinea = {
     labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'], 
     datasets: [
         {
@@ -56,4 +56,4 @@ var data = {
       maintainAspectRatio: false                          
 }
 
-export default data;
+export default datosLinea;

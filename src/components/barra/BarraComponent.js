@@ -16,7 +16,7 @@ class BarraComponent extends Component{
     //----------------------------------------------------------------------//      
     componentDidUpdate(prevProps, prevState) {
         console.log('BarraComponent.js - Metodo componentDidUpdate');
-        // One possible fix...
+
         if (this.state.datos !== data ) {
             this.setState({ datos: data });
         }
@@ -45,7 +45,7 @@ class BarraComponent extends Component{
         }  
 
         this.setState({
-            datos: this.state.datos.datasets[0].data + datosAzucar
+            datos: this.state.datos.datasets[1].data + datosAzucar
         })
 
     };     
@@ -66,7 +66,7 @@ class BarraComponent extends Component{
             <div className="container">
                 <h3 className="m-3">Grafico de Barras</h3>
                 <hr></hr>
-                <Bar width={400} height={400} data={data} options={data.options} redraw />
+                <Bar id="bar-chart" width={400} height={400} data={data} options={data.options} redraw />
                 <Button className="btn btn-4 btn-block mx-auto w-25" onClick={this.randomize}>Aleatorio</Button>
             </div>
         )
