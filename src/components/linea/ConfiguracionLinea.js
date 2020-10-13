@@ -52,7 +52,8 @@ var data = {
       legend: {
         display: true,
       },
-      responsive: true                           
+      responsive: true,
+      maintainAspectRatio: false                          
 }
 
 export default data;

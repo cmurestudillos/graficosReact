@@ -13,13 +13,6 @@ class LineaComponent extends Component{
         }    
     }
     //----------------------------------------------------------------------//
-    // Antes de renderizar, cargar el metodo                                //
-    //----------------------------------------------------------------------//
-    componentDidMount (){  
-        // Log de seguimiento
-        console.log("LineaComponent.js - Metodo componentDidMount");  
-    }    
-    //----------------------------------------------------------------------//
     // Metodo para generar datos aleatorios en la grafica                   //
     //----------------------------------------------------------------------//
     randomize = () => {
@@ -44,7 +37,9 @@ class LineaComponent extends Component{
     generateNumber = (i) => {
         return Math.floor((Math.random() * (i < 2 ? 100 : 1000)) + 1);
     };  
-
+    //----------------------------------------------------------------------//
+    // Metodo render                                                        //
+    //----------------------------------------------------------------------//
     render(){
         // Log de seguimiento
         console.log('LineaComponent.js - Metodo render()');

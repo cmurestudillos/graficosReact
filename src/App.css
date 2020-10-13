@@ -28,3 +28,11 @@
   color: white !important;
   text-decoration: none !important;
 }
+
+@media (max-width: 1920px) {
+  .chartjs-render-monitor{
+      max-width: 800px;
+      max-height: 600px;
+      margin: 0 auto;
+  }
+}
