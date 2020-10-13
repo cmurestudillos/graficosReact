@@ -46,4 +46,9 @@
       margin: 0 auto;
       padding-bottom: 10px;
   }
+  #radar-chart{
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0 auto;
+  }  
 }

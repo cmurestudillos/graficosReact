@@ -28,9 +28,8 @@ class DonutComponent extends Component{
         // Log de seguimiento
         console.log("DonutComponent.js - Metodo randomize");
 
-        // Generamos datos aleatorios para "Chorzo"
+        // Generamos datos aleatorios
         var datosGrafica = this.state.datos.datasets[0];
-        // Generamos datos aleatorios para "Chocolate"
         for (var i = 0; i < datosGrafica.data.length; i++) {
             datosGrafica.data[i] = this.generateNumber(i);
             this.setState({

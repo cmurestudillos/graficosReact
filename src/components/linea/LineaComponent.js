@@ -2,13 +2,13 @@ import React, {Component} from 'react';
 import { Line } from 'react-chartjs-2';
 import Button from 'react-bootstrap/Button';
 // Configuracion de la Grafica
-import data from './ConfiguracionLinea';
+import datosLinea from './ConfiguracionLinea';
 
 class LineaComponent extends Component{
     constructor(props){
         super(props);
         this.state = {
-            datos: data
+            datos: datosLinea
         }    
     }
     //----------------------------------------------------------------------//
@@ -17,8 +17,8 @@ class LineaComponent extends Component{
     componentDidUpdate(prevProps, prevState) {
         console.log('LineaComponent.js - Metodo componentDidUpdate');
 
-        if (this.state.datos !== data ) {
-            this.setState({ datos: data });
+        if (this.state.datos !== datosLinea ) {
+            this.setState({ datos: datosLinea });
         }
     }      
     //----------------------------------------------------------------------//
@@ -74,7 +74,7 @@ class LineaComponent extends Component{
             <div className="container">
                 <h3 className="m-3">Grafico de Lineas</h3>
                 <hr></hr>
-                <Line id="line-chart" width={400} height={400} data={data} options={data.options} redraw />
+                <Line id="line-chart" width={400} height={400} data={datosLinea} options={datosLinea.options} redraw />
                 <Button className="btn btn-4 btn-block mx-auto w-25" onClick={this.randomize}>Aleatorio</Button>
             </div>
         )
